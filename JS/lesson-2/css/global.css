@@ -85,3 +85,10 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* ---------------------------------------------------------- */
+.container {
+  max-width: 1600px;
+  padding: 0 16px;
+  margin: 0 auto;
+}

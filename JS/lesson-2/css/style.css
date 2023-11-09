@@ -1,0 +1,42 @@
+.hero {
+  background: #f4f4f4;
+}
+
+.hero__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.hero__box {
+  align-self: center;
+}
+
+.hero__title {
+  margin-bottom: 20px;
+}
+
+.hero__img {
+  height: 300px;
+}
+
+.hero__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__desc {
+  margin-bottom: 40px;
+}
+
+.hero__link {
+  padding: 8px 12px;
+  border: 1px solid #000;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero__link:hover {
+  color: #fff;
+  background-color: #000;
+}
