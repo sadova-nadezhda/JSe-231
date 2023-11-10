@@ -30,7 +30,7 @@ $(document).ready(function() {
 
   // $('.list li').click(function(e) {
   //   console.log($(this).text())
-  //   console.log(e)
+  //   console.log(e.timestamp)
   // })
 
   // $('.list li').hover(
