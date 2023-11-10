@@ -28,10 +28,9 @@ $(document).ready(function() {
   //   'overflow': 'auto'
   // })
 
-  // $('.list li').click(function(e) {
-  //   console.log($(this).text())
-  //   console.log(e.timestamp)
-  // })
+  $('.list li').click(function(e) {
+    console.log(e)
+  })
 
   // $('.list li').hover(
   //   function(){
