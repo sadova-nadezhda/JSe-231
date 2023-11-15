@@ -59,4 +59,15 @@ $(document).ready(function() {
   })
 
 
+  $('.btn').click(function(e){
+      return 'dgdsfg'
+  })
+
+  $('.btn').click(function(e){
+    // console.log(e)
+    $('.show').html(e.result)
+  })
+
+
+
 })
