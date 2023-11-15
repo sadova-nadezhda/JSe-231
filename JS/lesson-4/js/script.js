@@ -33,10 +33,25 @@ $(document).ready(function(){
   // $('.box1').wrap('<div class="wrapper"></div>')
   // $('.box1').wrapInner('<div class="inner"></div>')
 
-  // $('.box1').wrapAll('<div class="boxes"></div>')
+  $('.box1').wrapAll('<div class="boxes"></div>')
 
   // $('.txt').unwrap()
 
+  // Удаление элемета
+  $('.btn').click(function() {
+    $('.txt').remove()
+  })
 
+  // Очистить
+  $('.boxes').empty()
+
+  // Работа с атрибутами и свойствами
+  console.log($('.box-img img').attr('alt'))
+  console.log($('.box-img img').prop('alt'))
+
+  let url = 'https://www.imgonline.com.ua/examples/bee-on-daisy.jpg'
+
+  $('.box-img img').attr('src', url);
+  $('.box-img img').attr('width', '300px');
 
 });
