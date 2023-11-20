@@ -28,9 +28,22 @@ $(document).ready(function() {
   //   'overflow': 'auto'
   // })
 
+  let lastTime, timediff;
   $('.list li').click(function(e) {
-    console.log(e)
+    if(lastTime) {
+      timediff = e.timeStamp - lastTime;
+      console.log(timediff)
+    }
+    else {
+      lastTime = e.timeStamp;
+    }
   })
+
+  $('#userId').focus(function() {
+    $(this).blur()
+  })
+
+  $('li').eq(2).parent().next().wrap('<div class="wrap">')
 
   // $('.list li').hover(
   //   function(){
