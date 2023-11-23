@@ -1,4 +1,4 @@
-let array = [2, 3, 4, 5, -5, 9, -10, 58, -95]
+let array = [2, 1, 4, 1, -5, 1, -10, 58, -95]
 let strArray = ['bob', 'tom', 'ana', 'jack']
 let users = [
   {
@@ -43,7 +43,7 @@ let users = [
 // console.log(arrayPositive)
 // let arrayX2 = array.map((item, ind) => item ** 2)
 // console.log(arrayX2)
-let usersName = users.map((user) => user.name)
+// let usersName = users.map((user) => user.name)
 // console.log(usersName)
 
 // reduce
@@ -70,17 +70,17 @@ let usersName = users.map((user) => user.name)
 // users.sort((a, b) => a.age - b.age)
 // console.log(users)
 
-let obj1 = {
-  name: 'Ben',
-  info: {
-    skills: ['html', 'css']
-  }
-}
+// let obj1 = {
+//   name: 'Ben',
+//   info: {
+//     skills: ['html', 'css']
+//   }
+// }
 
-let obj2 = {
-  name: 'Jame',
-  age: 24
-}
+// let obj2 = {
+//   name: 'Jame',
+//   age: 24
+// }
 
 // копирование ссылки на один и тот же объект
 // let newObj = obj1;
@@ -111,3 +111,64 @@ let obj2 = {
 
 // let fromEntries = Object.fromEntries(user);
 // console.log(fromEntries)
+
+
+// console.log(array.filter( elem => !(elem%2) && elem>0).reduce((acc, elem) => (acc += Math.sqrt(elem)), 0))
+
+// let val = 1;
+// let n = array.filter((elem)=> elem==val).length;
+// console.log(n)
+
+// let odd = 0;
+// let even = 0;
+// array.forEach( (elem, ind) => {
+//   if(elem%2 == 0) {
+//     even++
+//   } else {
+//     odd ++
+//   }
+// })
+// console.log (
+//   'нечет ' + odd,
+//   'чет ' + even
+// )
+
+// console.log(array.map((elem)=> elem<0 ? 0 : elem))
+
+
+// let user = users.find(user => user.id===1)
+// console.log(user)
+
+let user1 = {
+  id: 1,
+  name: 'Bob',
+  age: 5,
+  gender: 'm',
+  balance: 125000
+}
+
+let user = [
+  ['name', 'Rocki'],
+  ['age', '26']
+]
+
+// let map = new Map()
+// map.set('name', 'Bob')
+// map.set('age', '25')
+// console.log(map)
+
+let map = new Map(Object.entries(user1))
+// console.log(map.has('name'))
+// console.log(map.get('name'))
+// console.log(map.size)
+// console.log(map.delete('name'))
+// console.log(map.has('name'))
+// console.log(map.clear())
+// console.log(map)
+// console.log(map.keys())
+// console.log(map.values())
+// console.log(map.entries())
+
+map.forEach((val, key) => {
+  console.log(`${key}: ${val}`)
+})
