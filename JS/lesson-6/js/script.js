@@ -172,3 +172,27 @@ let map = new Map(Object.entries(user1))
 map.forEach((val, key) => {
   console.log(`${key}: ${val}`)
 })
+
+
+// Повторение
+
+let data = {
+  position: 'Frontend'
+}
+
+let user = {
+  id: 1,
+  name: 'userName',
+  age: 25,
+  NaN: 'NaN'
+}
+
+console.log(user)
+
+let map = new Map(Object.entries(user));
+map.set(data, 'position')
+map.set(NaN, 'NaN')
+console.log(map)
+
+let x = Object.fromEntries(map)
+console.log(x)
